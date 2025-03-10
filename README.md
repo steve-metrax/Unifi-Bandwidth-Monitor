@@ -34,4 +34,8 @@ A MicroPython-based dashboard for monitoring UniFi network bandwidth (upload/dow
 - Uses libraries from [russhughes/st7789_mpy](https://github.com/russhughes/st7789_mpy).
 
 ## License
-MIT License (or choose another, e.g., GPL, Apache—add details here).
+MIT License
+
+Copyright (c) 2025 Steve Upson
+
+Permission is hereby granted, free of charge, to any person obtaining a copy...
