@@ -2,7 +2,7 @@
 
 A MicroPython-based dashboard for monitoring UniFi network bandwidth (upload/download) and connected clients on the LilyGo T-Display S3 (320x170 landscape).
 
-![Dashboard Screenshot](Image 2025-03-10 at 23.32.14_82104025.jpg)
+![Unifi Monitor Image](https://github.com/steve-metrax/Unifi-Monitor/blob/main/Image%202025-03-10%20at%2023.32.14_82104025.jpg)
 
 ## Features
 - Displays upload and download speeds (0.1-950 Mbps, logarithmic scale) as bar graphs with outlines.
