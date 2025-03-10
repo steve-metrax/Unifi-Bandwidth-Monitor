@@ -20,7 +20,7 @@ A MicroPython-based dashboard for monitoring UniFi network bandwidth (upload/dow
 - Required files: `main.py`, `vga2_8x16.py`.
 
 ## Installation
-1. Flash MicroPython firmware for LilyGo T-Display S3 (download from [MicroPython.org](https://micropython.org/download/esp32s3/) or LilyGo GitHub).
+1. Flash MicroPython firmware for LilyGo T-Display S3 (download from https://github.com/russhughes/st7789_mpy).
 2. Use Thonny or another IDE to upload `main.py` and `vga2_8x16.py` to the device.
 3. Update `WIFI_SSID`, `WIFI_PASSWORD`, `CONTROLLER_URL`, `USERNAME`, and `PASSWORD` in `main.py` with your settings.
 4. Power on via USB or battery—the dashboard will autostart.
