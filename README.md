@@ -14,6 +14,7 @@ A MicroPython-based dashboard for monitoring UniFi network bandwidth (upload/dow
 
 ## Software
 - MicroPython firmware for ESP32-S3.
+- https://github.com/russhughes/st7789_mpy
 - Required files: `main.py`, `vga2_8x16.py`.
 
 ## Installation
