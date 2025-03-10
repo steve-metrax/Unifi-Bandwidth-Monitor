@@ -30,7 +30,7 @@ A MicroPython-based dashboard for monitoring UniFi network bandwidth (upload/dow
 - Adjust `MAX_SPEED` or `utime.sleep()` in `main.py` if needed for your bandwidth or refresh rate.
 
 ## Credits
-- Created by Steve Upson with help from Grok 3 (xAI).
+- Created by Steve Upson with help from Grok 3 (xAI), quite alot of help actually as this is not in my wheelhouse! The networking bit is very much in my wheelhouse.
 - Uses libraries from [russhughes/st7789_mpy](https://github.com/russhughes/st7789_mpy).
 
 ## License
