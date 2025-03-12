@@ -52,8 +52,15 @@ Permission is hereby granted, free of charge, to any person obtaining a copy...
 - I found this to be a very good guide that will help you install Thonny, load the firmware and give it a quick test.
 https://randomnerdtutorials.com/getting-started-thonny-micropython-python-ide-esp32-esp8266/
 
-Use the guide to install the firmware from here
+The firmware is here
 - https://github.com/russhughes/st7789_mpy
+- Click on "Code" and "Download ZIP"
+- Unzip the file on you local PC
+- Handly the firmware is in the "Firmware" folder
+
+
+
+
 
 
 
