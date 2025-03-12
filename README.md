@@ -20,7 +20,7 @@ A MicroPython-based dashboard for monitoring UniFi network bandwidth (upload/dow
 - Required files: `main.py`, `vga2_8x16.py`.
 
 ## Installation
-1. Flash MicroPython firmware for LilyGo T-Display S3 (download from https://github.com/russhughes/st7789_mpy).
+1. Flash MicroPython firmware for LilyGo T-Display S3 (download from https://github.com/russhughes/st7789_mpy). Nice one Russ, a steep learing curve but got there in the end.
 2. Use Thonny or another IDE to upload `main.py` and `vga2_8x16.py` to the device.
 3. Update `WIFI_SSID`, `WIFI_PASSWORD`, `CONTROLLER_URL`, `USERNAME`, and `PASSWORD` in `main.py` with your settings.
 4. Power on via USB or battery—the dashboard will autostart.
@@ -31,11 +31,21 @@ A MicroPython-based dashboard for monitoring UniFi network bandwidth (upload/dow
 
 ## Credits
 - Created by Steve Upson with help from Grok 3 (xAI), quite alot of help actually as this is not in my wheelhouse! The networking bit is very much in my wheelhouse.
-- Uses libraries from [russhughes/st7789_mpy](https://github.com/russhughes/st7789_mpy).
+- Uses libraries from [russhughes/st7789_mpy](https://github.com/russhughes/st7789_mpy), again thanks Russ!
+- ZX Spectrum BASIC is about the limit of my knowlege when it comes to programing so getting this working did give me a bit of a buzz.
+
+## Improvements
+- Looks, I'm no graphic artist so plenty of scope for improvement
+- Refresh, the display refresh is once every 5 to 10 seconds, plenty of scope for improvement.
 
 ## License
-MIT License
+MIT License (not sure what this means but it's yours, use/mod as you want, just give me a mention)
 
 Copyright (c) 2025 Steve Upson
 
 Permission is hereby granted, free of charge, to any person obtaining a copy...
+
+## For the beginner
+Here's the bit where I try to explain to the complete beginner how you get this working, "strap in" !
+
+
