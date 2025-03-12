@@ -49,7 +49,12 @@ Permission is hereby granted, free of charge, to any person obtaining a copy...
 Here's the bit where I try to explain to the complete beginner how you get this working! I often find myself looking at project's on github and wishing there was a very beginner orientated "How To", well this is my attempt to help out the absoulute beginners.  "strap in" 
 
 ### Installing Thonny IDE – Windows PC
+Download Thonny from here
 https://thonny.org/
+Run thonny-4.1.7.exe and follow the prompts, accept the defaults.
+You should end up with something like this
+![Unifi Monitor Image](https://github.com/steve-metrax/Unifi-Monitor/blob/main/Thonny.jpg)
+
 
 
 
