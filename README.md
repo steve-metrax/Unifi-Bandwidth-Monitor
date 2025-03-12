@@ -4,6 +4,8 @@ A MicroPython-based dashboard for monitoring UniFi network bandwidth (upload/dow
 
 ![Unifi Monitor Image](https://github.com/steve-metrax/Unifi-Monitor/blob/main/IMG_9638.JPG)
 
+https://lilygo.cc/products/t-display-s3
+
 ## Features
 - Displays upload and download speeds (0.1-950 Mbps, logarithmic scale) as bar graphs with outlines.
 - Shows connected client count.
@@ -57,6 +59,9 @@ The firmware is here
 - Click on "Code" and "Download ZIP"
 - Unzip the file on you local PC
 - Handly the firmware is in the "Firmware" folder
+
+### Im going to assume you have Thonny installed and the Lilygo T-Display-S3 connected with the correct firmware.
+
 
 
 
