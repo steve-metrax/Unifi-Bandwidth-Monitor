@@ -60,7 +60,7 @@ The firmware is here
 - Unzip the file on you local PC
 - Handly the firmware is in the "Firmware" folder
 
-### Im going to assume you have Thonny installed and the Lilygo T-Display-S3 connected with the correct firmware.
+### I'm going to assume you have Thonny installed and the Lilygo T-Display-S3 connected with the correct firmware.
 
 
 
