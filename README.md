@@ -66,7 +66,9 @@ The firmware is here
 - Select "View" and then "Files"
 - In files point to where you have "main.py" and "vga2_8x16.py"
 - Double click on "main.py" and update the following lines to match you own settings.
+ 
 ![Unifi Monitor Image](https://github.com/steve-metrax/Unifi-Monitor/blob/main/lines to edit.jpg).  
+
 - Right click on "main.py" and "Upload to /", this will send to file to the Lilygo board
 - Right click on "vga2_8x16.py" and "Upload to /", this will send to file to the Lilygo board
 - Reset the board
