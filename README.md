@@ -15,6 +15,7 @@ https://lilygo.cc/products/t-display-s3
 ## Hardware
 - LilyGo T-Display S3 (ESP32-S3, ST7789 display, 320x170).
 - USB power adapter or LiPo battery (3.7V, 500mAh+).
+- Tested Ubiquiti UniFi Cloud Gateway Ultra, other Unifi routers milage may vary!
 
 ## Software
 - MicroPython firmware for ESP32-S3.
@@ -72,6 +73,7 @@ The firmware is here
 - Right click on "main.py" and "Upload to /", this will send to file to the Lilygo board
 - Right click on "vga2_8x16.py" and "Upload to /", this will send to file to the Lilygo board
 - Reset the board
+- Your Lilygo display board should connect to your wifi, login to your Unifi gateway and display the real time bandwidth.
 
 
 
