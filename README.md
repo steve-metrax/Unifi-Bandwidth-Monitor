@@ -35,7 +35,7 @@ https://lilygo.cc/products/t-display-s3
 ## Credits
 - Created by Steve Upson with help from Grok 3 (xAI), quite alot of help actually as this is not in my wheelhouse! The networking bit is very much in my wheelhouse.
 - Uses libraries from [russhughes/st7789_mpy](https://github.com/russhughes/st7789_mpy), again thanks Russ!
-- ZX Spectrum BASIC is about the limit of my knowlege when it comes to programing so getting this working did give me a bit of a buzz.
+- ZX Spectrum BASIC is about the limit of my knowlege when it comes to programing so getting this working did give me a buzz.
 
 ## Improvements
 - Looks, I'm no graphic artist so plenty of scope for improvement
