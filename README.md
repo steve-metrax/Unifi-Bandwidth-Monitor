@@ -13,9 +13,9 @@ https://lilygo.cc/products/t-display-s3
 - Runs autonomously on power-on.
 
 ## Hardware
-- LilyGo T-Display S3 (ESP32-S3, ST7789 display, 320x170).
+- LilyGo T-Display-S3 (ESP32-S3, ST7789 display, 320x170).
 - USB power adapter or LiPo battery (3.7V, 500mAh+).
-- Tested Ubiquiti UniFi Cloud Gateway Ultra, other Unifi routers milage may vary!
+- Tested Ubiquiti UniFi Cloud Gateway Ultra, other Unifi routers mileage may vary!
 
 ## Software
 - MicroPython firmware for ESP32-S3.
@@ -23,7 +23,7 @@ https://lilygo.cc/products/t-display-s3
 - Required files: `main.py`, `vga2_8x16.py`.
 
 ## Installation
-1. Flash MicroPython firmware for LilyGo T-Display S3 (download from https://github.com/russhughes/st7789_mpy). Nice one Russ, a steep learing curve but got there in the end.
+1. Flash MicroPython firmware for LilyGo T-Display S3 (download from https://github.com/russhughes/st7789_mpy). Nice one Russ, a steep learning curve but got there in the end.
 2. Use Thonny or another IDE to upload `main.py` and `vga2_8x16.py` to the device.
 3. Update `WIFI_SSID`, `WIFI_PASSWORD`, `CONTROLLER_URL`, `USERNAME`, and `PASSWORD` in `main.py` with your settings.
 4. Power on via USB or battery—the dashboard will autostart.
@@ -33,13 +33,14 @@ https://lilygo.cc/products/t-display-s3
 - Adjust `MAX_SPEED` or `utime.sleep()` in `main.py` if needed for your bandwidth or refresh rate.
 
 ## Credits
-- Created by Steve Upson with help from Grok 3 (xAI), quite alot of help actually as this is not in my wheelhouse! The networking bit is very much in my wheelhouse.
+- Created by Steve Upson with help from Grok 3 (xAI), quite a lot of help actually as this is not in my wheelhouse! The networking bit is very much in my wheelhouse.
 - Uses libraries from [russhughes/st7789_mpy](https://github.com/russhughes/st7789_mpy), again thanks Russ!
-- ZX Spectrum BASIC is about the limit of my knowlege when it comes to programing so getting this working did give me a buzz.
+- ZX Spectrum BASIC is about the limit of my knowledge when it comes to programming so getting this working did give me a buzz.
 
 ## Improvements
 - Looks, I'm no graphic artist so plenty of scope for improvement
 - Refresh, the display refresh is once every 5 to 10 seconds, plenty of scope for improvement.
+- The LilyGo T-Display-S3 WiFi antenna on the circuit board is very crap! I have tested 2 and both were crap. I would recommend an add on antenna, looks like there is a plug for one soldered on the back of the board. 
 
 ## License
 MIT License (not sure what this means but it's yours, use/mod as you want, just give me a mention)
@@ -49,7 +50,7 @@ Copyright (c) 2025 Steve Upson
 Permission is hereby granted, free of charge, to any person obtaining a copy...
 
 # For the beginner
-- Here's the bit where I try to explain to the complete beginner how you get this working! I often find myself looking at project's on github and wishing there was a very beginner orientated "How To", well this is my attempt to help out the absoulute beginners.  "strap in" 
+- Here's the bit where I try to explain to the complete beginner how you get this working! I often find myself looking at project's on github and wishing there was a very beginner orientated "How To", well this is my attempt to help out the absolute beginners.  "strap in" 
 
 ### Installing Thonny IDE – Windows PC
 - I found this to be a very good guide that will help you install Thonny, load the firmware and give it a quick test.
@@ -59,7 +60,7 @@ The firmware is here
 - https://github.com/russhughes/st7789_mpy
 - Click on "Code" and "Download ZIP"
 - Unzip the file on you local PC
-- Handly the firmware is in the "Firmware" folder
+- Handley the firmware is in the "Firmware" folder
 
 ### I'm going to assume you have Thonny installed and the Lilygo T-Display-S3 connected with the correct firmware.
 
