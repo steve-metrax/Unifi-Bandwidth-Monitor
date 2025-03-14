@@ -77,7 +77,11 @@ def login_unifi():
         return None
 
 def get_unifi_stats(cookie):
-    """Fetch bandwidth (upload/download) and client count from UniFi."""
+    """
+    Fetch bandwidth (upload/download) and client count from UniFi.
+    Returns (upload_mbps, download_mbps, client_count, cookie) on success,
+    (None, None, None, cookie) on failure. Updates cookie if needed.
+    """
     stats_url = f"{CONTROLLER_URL}/proxy/network/api/s/{SITE}/stat/health"
     headers = {"Content-Type": "application/json", "Cookie": cookie}
     try:
@@ -92,10 +96,16 @@ def get_unifi_stats(cookie):
                     total_rx_bytes += entry.get('rx_bytes-r', 0)
             total_tx_mbps = total_tx_bytes / 125000
             total_rx_mbps = total_rx_bytes / 125000
+        elif response.status_code == 401:  # Unauthorized - cookie likely expired
+            # Re-authenticate to refresh cookie
+            new_cookie = login_unifi()
+            if new_cookie:
+                return get_unifi_stats(new_cookie)  # Retry with new cookie
+            return None, None, None, cookie
         else:
-            return None, None, None
+            return None, None, None, cookie
     except Exception:
-        return None, None, None
+        return None, None, None, cookie
 
     clients_url = f"{CONTROLLER_URL}/proxy/network/api/s/{SITE}/stat/sta"
     try:
@@ -103,10 +113,16 @@ def get_unifi_stats(cookie):
         if response.status_code == 200:
             clients_data = json.loads(response.text)
             client_count = len(clients_data['data'])
-            return total_tx_mbps, total_rx_mbps, client_count
-        return total_tx_mbps, total_rx_mbps, None
+            return total_tx_mbps, total_rx_mbps, client_count, cookie
+        elif response.status_code == 401:
+            # Re-authenticate to refresh cookie
+            new_cookie = login_unifi()
+            if new_cookie:
+                return get_unifi_stats(new_cookie)
+            return total_tx_mbps, total_rx_mbps, None, cookie
+        return total_tx_mbps, total_rx_mbps, None, cookie
     except Exception:
-        return total_tx_mbps, total_rx_mbps, None
+        return total_tx_mbps, total_rx_mbps, None, cookie
 
 def draw_log_bar(x, y, speed, min_speed, max_speed, color, label):
     """Draw a logarithmic bar graph with white outline, filling based on speed."""
@@ -149,7 +165,7 @@ def main():
             utime.sleep(0.08)
         
         while True:
-            tx_mbps, rx_mbps, client_count = get_unifi_stats(cookie)
+            tx_mbps, rx_mbps, client_count, cookie = get_unifi_stats(cookie)  # Update cookie
             tft.fill(GREY)
             if tx_mbps is not None and rx_mbps is not None:
                 draw_log_bar(10, 10, tx_mbps, MIN_SPEED, MAX_SPEED, st7789.RED, "Upload")
