@@ -10,9 +10,9 @@ A MicroPython-based dashboard for monitoring UniFi network bandwidth (upload/dow
 - Automatically refreshes the UniFi session cookie to prevent expiration after ~2 hours.
 
 ## Screenshots
-![LilyGo T-Display S3 UniFi Dashboard](dashboard.jpg)
+![Unifi Monitor Image](https://github.com/steve-metrax/Unifi-Monitor/blob/main/IMG_9638.JPG)
 
-*Dashboard displaying upload/download speeds and client count on a grey background.*
+*Dashboard displaying upload/download speeds and client count on an Orange background.*
 
 ## Hardware
 - **LilyGo T-Display S3**: ESP32-S3 with ST7789 display (320x170).
