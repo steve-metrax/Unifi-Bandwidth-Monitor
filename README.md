@@ -10,7 +10,7 @@ A MicroPython-based dashboard for monitoring UniFi network bandwidth (upload/dow
 - Automatically refreshes the UniFi session cookie to prevent expiration after ~2 hours.
 
 ## Screenshots
-![Unifi Monitor Image](https://github.com/steve-metrax/Unifi-Monitor/blob/main/IMG_9638.JPG)
+![Unifi Monitor Image](https://github.com/steve-metrax/Unifi-Monitor/blob/main/dashboard.JPG)
 
 *Dashboard displaying upload/download speeds and client count on an Orange background.*
 
